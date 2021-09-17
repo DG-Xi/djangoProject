@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block bar %}
+     <div class="col-md-9" style=  "justify-content: flex-end;">
+            <h1 class="page-header">出版社管理页面</h1>
+            <div class="panel panel-primary">
+                <!-- Default panel contents -->
+                <div class="panel-heading">出版社列表 <i class="fa fa-thumb-tack pull-right"></i></div>
+                <div class="panel-body">
+                    <div class="row" style="margin-bottom: 15px">
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">搜索</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-md-4 -->
+                        <div class="col-md-2 pull-right">
+                            <a class="btn btn-success" href="/app01/add_publisher/">新增出版社</a>
+                        </div>
+                </div>
+                </div>
+{% endblock %}
